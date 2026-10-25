@@ -1,0 +1,55 @@
+================================================================================
+FarFlight Mechatronics Website Keywords (multi-language)
+Website: FarFlight Trading Co., Ltd — Industrial Servo & Drive Solutions
+Note: EN + ZH versions are applied to website SEO meta tags.
+      Other languages are for reference / future regional marketing use.
+================================================================================
+
+[English]
+FarFlight Mechatronics, FarFlight Trading Co. Ltd, industrial servo motor, permanent magnet synchronous servo motor, PMSM servo motor, servo drive system, servo drive, servo amplifier, servo controller, VFD inverter, variable frequency drive, frequency inverter, vector inverter, general purpose inverter, bus-type servo drive, EtherCAT servo drive, CANopen servo drive, dual-axis servo drive, high-performance servo drive, IP66 inverter, IP67 inverter, high protection inverter, motor-drive integrated inverter, motor-mounted VFD, water pump inverter, fan inverter, constant-pressure water supply VFD, motion control, industrial automation, servo motor supplier, servo drive distributor, China servo motor, servo motor price, servo drive quotation, servo motor selection, buy servo motor online, buy VFD inverter online, CNC machine servo drive, packaging machinery servo, textile machinery inverter, industrial robot servo drive, semiconductor equipment servo, photovoltaic equipment servo, lithium battery equipment motor, printing machinery servo, medical equipment motor, 23-bit absolute encoder servo motor, 0.2-450 kW inverter, 40-180 mm servo motor, EURA DRIVES supplier, industrial motion control solutions
+
+[中文 Chinese]
+远翔贸易有限公司, 工业伺服电机, 永磁同步伺服电机, 伺服电机, 伺服驱动器, 伺服驱动系统, 伺服放大器, 变频器, 矢量变频器, 通用变频器, 总线型伺服驱动器, EtherCAT 伺服驱动器, CANopen 伺服驱动器, 双轴伺服驱动器, 高性能伺服驱动器, 高防护等级变频器, IP66 变频器, IP67 变频器, 电机驱动一体变频器, 电机安装式变频器, 水泵变频器, 风机变频器, 恒压供水变频器, 运动控制, 工业自动化, 伺服电机供应商, 伺服驱动器批发商, 中国伺服电机, 伺服电机价格, 伺服驱动器报价, 伺服电机选型, 在线购买伺服电机, 在线购买变频器, 数控机床伺服驱动, 包装机械伺服, 纺织机械变频器, 工业机器人伺服驱动, 半导体设备伺服, 光伏设备伺服, 锂电池设备电机, 印刷机械伺服, 医疗设备电机, 23位绝对值编码器, 0.2-450kW 变频器, 40-180mm 伺服电机, 欧瑞传动, 机电产品贸易, 伺服电机出口, 工业运动控制解决方案
+
+[Español / Spanish]
+motor servo industrial, servomotor, motor síncrono de imanes permanentes, variador de frecuencia, inversor vectorial, variador de velocidad, accionamiento servo, servo drive, automatización industrial, control de movimiento, proveedor de servomotores, variador para bombas de agua, variador para ventiladores, suministro constante de presión, motor servo CNC, robótica industrial
+
+[Français / French]
+moteur servo industriel, servomoteur, moteur synchrone à aimants permanents, variateur de fréquence, variateur vectoriel, variateur de vitesse, entraînement servo, servo drive, automatisme industriel, contrôle de mouvement, fournisseur de servomoteurs, variateur pour pompes, variateur pour ventilateurs, moteur servo CNC, robotique industrielle
+
+[Deutsch / German]
+Industrieservomotor, Servomotor, Servoregler, Servoumrichter, Frequenzumrichter, Vectorumrichter, Permanentmagnet-Synchronmotor, Antriebstechnik, industrielle Automatisierung, Motion Control, Servomotor Anbieter, Frequenzumrichter für Pumpen, Frequenzumrichter für Lüfter, konstanter Wasserdruck, CNC Servoantrieb, Industrierobotik
+
+[日本語 / Japanese]
+産業用サーボモーター, サーボモーター, サーボドライバー, サーボアンプ, インバーター, ベクトル制御インバーター, 可変周波数ドライブ, 永久磁石同期サーボモーター, FA機器, モーションコントロール, 工業オートメーション, サーボモーター サプライヤー, ポンプ用インバーター, 送風機用インバーター, 定圧給水, CNC用サーボ, 産業用ロボット
+
+[한국어 / Korean]
+산업용 서보 모터, 서보 모터, 서보 드라이브, 서보 앰프, 인버터, 벡터 인버터, 가변 주파수 드라이브, 영구자석 동기 서보 모터, 산업 자동화, 모션 컨트롤, 서보 모터 공급업체, 펌프용 인버터, 송풍기용 인버터, 정압 급수, CNC 서보 드라이브, 산업용 로봇
+
+[العربية / Arabic]
+محرك سيرفو صناعي, محرك سيرفو, درايفر سيرفو, محول تردد, انفرتر, انفرتر متجهي, محرك تزامني بمغناطيس دائم, الأتمتة الصناعية, التحكم بالحركة, مورد محركات السيرفو, انفرتر للمضخات, انفرتر للمراوح, ضغط ماء ثابت, سيرفو ماكينات CNC, الروبوتات الصناعية
+
+[Português / Portuguese]
+motor servo industrial, servomotor, motor síncrono de ímãs permanentes, inversor de frequência, inversor vetorial, variador de frequência, acionamento servo, servo drive, automação industrial, controle de movimento, fornecedor de servomotores, inversor para bombas, inversor para ventiladores, pressão constante de água, servo CNC, robótica industrial
+
+[Русский / Russian]
+промышленный сервопривод, серводвигатель, сервопривод, сервоусилитель, частотный преобразователь, инвертор, векторный преобразователь частоты, синхронный двигатель с постоянными магнитами, промышленная автоматизация, управление движением, поставщик серводвигателей, преобразователь для насосов, преобразователь для вентиляторов, постоянное давление воды, сервопривод ЧПУ, промышленная робототехника
+
+[Tiếng Việt / Vietnamese]
+động cơ servo công nghiệp, động cơ servo, servo driver, biến tần, máy biến tần, biến tần điều khiển vector, động cơ đồng bộ nam châm vĩnh cửu, tự động hóa công nghiệp, điều khiển chuyển động, nhà cung cấp động cơ servo, biến tần cho bơm nước, biến tần cho quạt, áp suất nước không đổi, servo máy CNC, robot công nghiệp
+
+[ไทย / Thai]
+มอเตอร์เซอร์โวอุตสาหกรรม, เซอร์โวมอเตอร์, เซอร์โวไดรเวอร์, เซอร์โวแอมป์, อินเวอร์เตอร์, เฟรควอนซี่อินเวอร์เตอร์, อินเวอร์เตอร์แบบเวกเตอร์, มอเตอร์ซิงโครนัสแม่เหล็กถาวร, ระบบอัตโนมัติอุตสาหกรรม, ระบบควบคุมการเคลื่อนที่, ผู้จำหน่ายเซอร์โวมอเตอร์, อินเวอร์เตอร์ปั๊มน้ำ, อินเวอร์เตอร์พัดลม, แรงดันน้ำคงที่, เซอร์โว CNC, หุ่นยนต์อุตสาหกรรม
+
+[Bahasa Melayu / Malay]
+motor servo industri, motor servo, pemacu servo, amplifier servo, pemaju frekuensi, inverter, inverter vektor, motor segerak magnet kekal, automasi industri, kawalan gerakan, pembekal motor servo, inverter pam air, inverter kipas, tekanan air malar, servo CNC, robotik industri
+
+================================================================================
+SEO Application Notes:
+- Applied to site SEO (EN + ZH): <meta name="keywords">, <meta name="description">,
+  page <title> and Open Graph tags (see tools/build.py).
+- Sitemap: sitemap.xml is generated by tools/build.py once the live domain is set.
+- Next step for the site owner: submit the site to Google Search Console
+  (https://search.google.com/search-console), verify domain ownership,
+  and submit the sitemap (https://<your-domain>/sitemap.xml).
+================================================================================

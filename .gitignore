@@ -1,0 +1,10 @@
+# Raw product source materials (large CAD/PDF files) - not part of the website
+eura/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+Thumbs.db
+.DS_Store

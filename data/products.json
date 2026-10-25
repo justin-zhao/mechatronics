@@ -1,0 +1,653 @@
+{
+  "site": {
+    "brand": "FarFlight Mechatronics",
+    "company": "FarFlight Trading Co., Ltd",
+    "tagline": "Industrial Servo & Drive Solutions",
+    "email": "candy78hu@gmail.com",
+    "whatsapp_number": "+86 198 6087 1978",
+    "whatsapp_link": "https://wa.me/8619860871978",
+    "alipay_qr": "assets/images/alipay-qr.jpg"
+  },
+  "products": [
+    {
+      "slug": "sm-series-servo-motor",
+      "name": "SM Series Permanent Magnet Synchronous Servo Motor",
+      "short_name": "SM Servo Motor",
+      "category": "AC Synchronous Servo Motor",
+      "group": "Servo Motors",
+      "tagline": "High-torque, high-response precision motion in a compact frame",
+      "summary": "Rare-earth permanent magnet synchronous servo motor with 23-bit encoder support, speeds up to 6000 rpm, and six flange sizes from 40 to 180 mm.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "40–180 mm frames",
+      "key_specs": [
+        {"label": "Frame sizes", "value": "40 / 60 / 80 / 110 / 130 / 180 mm"},
+        {"label": "Encoder", "value": "Incremental / absolute, up to 23-bit"},
+        {"label": "Max speed", "value": "Up to 6000 rpm"},
+        {"label": "Protection", "value": "IP65 standard, up to IP67 customizable"}
+      ],
+      "description": [
+        "The SM Series permanent magnet synchronous servo motor is a high-performance motion solution, engineered to pair seamlessly with EURA DRIVES servo drives to form a complete, tightly integrated servo system. Built around high-energy rare-earth permanent magnets, the SM Series delivers exceptional torque density and efficiency in a compact, lightweight frame.",
+        "Advanced electromagnetic design minimizes torque ripple and cogging for smooth, stable operation even at low speeds, while the optimized low-inertia rotor provides the fast dynamic response demanded by high-acceleration positioning cycles. High-resolution encoder feedback — available in incremental or absolute versions — ensures precise speed and position control for exacting automation tasks.",
+        "With six flange sizes from 40 mm to 180 mm, each offered in standard and holding-brake versions, the SM Series covers a broad spectrum of automation loads. Rugged IP65 construction with shaft oil seal and Class F insulation guarantees a long, reliable service life even in harsh industrial environments."
+      ],
+      "features": [
+        {"title": "High-Energy Rare-Earth Magnets", "text": "Outstanding torque density in a compact, lightweight package for space-constrained machine designs."},
+        {"title": "Smooth Low-Speed Operation", "text": "Optimized electromagnetic design delivers low torque ripple and cogging for stable, precise motion."},
+        {"title": "Fast Dynamic Response", "text": "Low-inertia rotor with a high torque-to-inertia ratio for high-acceleration positioning cycles."},
+        {"title": "High-Precision Feedback", "text": "Incremental and absolute encoder options up to 23-bit resolution for exact speed and position control."},
+        {"title": "Wide Speed Range", "text": "Maximum speed up to 6000 rpm depending on model, covering both high-speed and low-speed applications."},
+        {"title": "Rugged Protection", "text": "IP65 protection as standard with shaft oil seal, customizable up to IP67; Class F insulation for thermal reliability."},
+        {"title": "Six Frame Sizes", "text": "40 / 60 / 80 / 110 / 130 / 180 mm flanges, each available in standard or holding-brake versions."},
+        {"title": "Matched System Pairing", "text": "Designed to operate as a complete matched servo system with EURA DRIVES SD20/SDE20 series drives."}
+      ],
+      "specifications": [
+        {
+          "group": "General",
+          "items": [
+            {"label": "Motor type", "value": "Permanent magnet synchronous servo motor (PMSM)"},
+            {"label": "Frame / flange sizes", "value": "40 / 60 / 80 / 110 / 130 / 180 mm"},
+            {"label": "Variants", "value": "Standard and with electromagnetic holding brake"},
+            {"label": "Rated power", "value": "50 W – 6 kW class (frame dependent)"},
+            {"label": "Max speed", "value": "Up to 6000 rpm (model dependent)"}
+          ]
+        },
+        {
+          "group": "Performance & Construction",
+          "items": [
+            {"label": "Magnet material", "value": "High-performance rare-earth permanent magnet"},
+            {"label": "Encoder options", "value": "High-resolution incremental or absolute, up to 23-bit"},
+            {"label": "Insulation class", "value": "Class F"},
+            {"label": "Protection class", "value": "IP65 standard (with shaft oil seal); up to IP67 customizable"},
+            {"label": "Brake option", "value": "Electromagnetic holding brake for vertical axes and safety holding"}
+          ]
+        }
+      ],
+      "models": "Model family SM + frame size: SM40, SM60, SM80, SM110, SM130, SM180 — twelve standard configurations (each frame size in standard and with-brake versions). Matched motor families for the SD20 drive series include SMS (3000/2500 rpm), SMM (2000/1500 rpm) and SML (1000 rpm) with 60–180 mm flanges.",
+      "applications": ["Semiconductor equipment", "Photovoltaic equipment", "Lithium battery equipment", "Industrial robots", "CNC machine tools", "Packaging machinery", "Printing machinery", "Textile machinery", "Food & beverage", "Medical equipment", "Logistics & conveying", "Automated production lines"],
+      "images": {
+        "photo": "assets/images/products/sm-series-servo-motor/photo.png",
+        "front": "assets/images/products/sm-series-servo-motor/front.png",
+        "side": "assets/images/products/sm-series-servo-motor/side.png",
+        "back": "assets/images/products/sm-series-servo-motor/back.png",
+        "detail": "assets/images/products/sm-series-servo-motor/detail.png"
+      }
+    },
+    {
+      "slug": "sd20-e-bus-servo-drive",
+      "name": "SD20-E Bus-Type Servo Drive System",
+      "short_name": "SD20-E Servo Drive",
+      "category": "Fieldbus Servo Drive System",
+      "group": "Servo Drives",
+      "tagline": "Third-generation bus servo performance with built-in EtherCAT",
+      "summary": "High-performance bus-type servo drive with 3.2 kHz response, built-in EtherCAT (CANopen optional), 23-bit absolute encoder support, and ratings from 0.1 to 110 kW.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "0.1–110 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "0.1–110 kW series (100 W–7.5 kW @220 V, 1.5–37 kW @380 V)"},
+        {"label": "Fieldbus", "value": "EtherCAT built-in; CANopen optional; Modbus"},
+        {"label": "Frequency response", "value": "3.2 kHz"},
+        {"label": "Control modes", "value": "PP / PV / PT / HM / CSP / CSV / CST"}
+      ],
+      "description": [
+        "The SD20-E is the third-generation bus-type servo drive, engineered as a high-performance drive with a 3.2 kHz frequency response — more than double the previous generation. Built on a dual-core processor with a hardware current loop, 6 kHz position loop and 16 kHz speed loop, it delivers smooth motor control with no vibration at standstill and precise, fast response across the widest automation tasks.",
+        "With built-in EtherCAT (CANopen available as an option), the SD20-E has passed the official EtherCAT Conformance Test (CTT), guaranteeing compatibility with PLCs and automation controllers from different brands. Bidirectional data transmission reaches 100 Mbps with cycle times down to 250 μs, using DC distributed-clock synchronization with sub-microsecond jitter. Feedback options include incremental encoders, absolute encoders up to 23-bit (38 million pulses/rev) and resolvers.",
+        "Commissioning is simplified by gain autotuning, inertia autotuning, online rotating inertia identification, model feedforward control and notch filters. Rich functionality includes full-closed-loop control, gantry synchronization, electronic CAM, a built-in PLC for simple user programs, multi-position control, moving fixed-length cutting, gain switching, homing search and vibration suppression — making the SD20-E a complete motion solution."
+      ],
+      "features": [
+        {"title": "3.2 kHz Frequency Response", "text": "Third-generation dual-core platform with hardware current loop, 6 kHz position loop and 16 kHz speed loop."},
+        {"title": "Built-in EtherCAT (CoE)", "text": "Passed the official EtherCAT Conformance Test for cross-brand PLC compatibility; 100 Mbps, DC distributed clock, min. cycle 250 μs, jitter < 1 μs."},
+        {"title": "CANopen Option", "text": "Fieldbus flexibility with CANopen (F4) or Modbus via RS485/RS232 and USB for setup and monitoring."},
+        {"title": "23-Bit Absolute Encoder Support", "text": "Up to 38 million pulses per revolution; also supports incremental encoders and resolvers."},
+        {"title": "7 Control Modes", "text": "Profile Position, Profile Velocity, Profile Torque, Homing, Cyclic Sync Position, Cyclic Sync Velocity, Cyclic Sync Torque."},
+        {"title": "Auto-Tuning & Feedforward", "text": "Gain autotuning, inertia autotuning, online inertia identification, model feedforward and notch filters for fast commissioning."},
+        {"title": "Built-in PLC & Electronic CAM", "text": "User-programmable logic plus E-CAM, gantry synchronization and multi-position control for complex motion."},
+        {"title": "Comprehensive Protection", "text": "Overvoltage/undervoltage, overload, overcurrent, overspeed, encoder error, phase loss, overheat, regen brake error, battery under-voltage and sync-loss protection."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Series power range", "value": "0.1 – 110 kW"},
+            {"label": "220 V class ratings", "value": "100 W / 200 W / 400 W / 750 W / 1–7.5 kW (11 models)"},
+            {"label": "380 V class ratings", "value": "1.5 – 37 kW (12 models)"},
+            {"label": "Input supply", "value": "1-phase 220 V (S2), 3-phase 220 V (T2), 3-phase 380 V (T3), ±10%, 50/60 Hz"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Motor type", "value": "PMSM servo motor"},
+            {"label": "Speed loop response", "value": "3.2 kHz"},
+            {"label": "Speed fluctuation", "value": "±0.01% (0–100% load)"},
+            {"label": "Speed control range", "value": "1:10,000"},
+            {"label": "Control modes", "value": "PP / PV / PT / HM / CSP / CSV / CST"},
+            {"label": "Electronic gear ratio", "value": "0.01 ≤ B/A ≤ 100, two switchable groups"},
+            {"label": "High-speed pulse input", "value": "Up to 4 MHz"}
+          ]
+        },
+        {
+          "group": "Communication & Feedback",
+          "items": [
+            {"label": "Fieldbus", "value": "EtherCAT (CoE, 100BASE-TX, DC sync) built-in; CANopen optional; Modbus RS485/RS232; USB"},
+            {"label": "Encoder support", "value": "23-bit absolute, 17-bit absolute, 2500/5000 PPR incremental, resolver"},
+            {"label": "Display", "value": "5-digit LED, 4 keys, S-ON / RUN / ALM indicators"}
+          ]
+        },
+        {
+          "group": "Standards",
+          "items": [
+            {"label": "Compliance", "value": "IEC/EN 61800-5-1:2007, IEC/EN 61800-3:2004+A1:2012"},
+            {"label": "Applicable load inertia", "value": "< 5× motor inertia"}
+          ]
+        }
+      ],
+      "models": "Model numbering: SD20-E [power code] [S2|T2|T3] [frame] + function codes. 220 V: 101/201/401/751/102/122/182/302/452/552/752; 380 V: 152/202/302/452/552/752/113/153/183/223/303/373. Function codes: F5 EtherCAT, F4 CANopen, F0 Modbus; encoder D5/D7/D2; brake B1/B2/B3/B6. Example: SD20-E102T2M2.",
+      "applications": ["CNC machine tools", "Packaging machinery", "Textile machinery", "Woodworking machinery", "Multi-axis synchronized automation", "Industrial robots"],
+      "images": {
+        "photo": "assets/images/products/sd20-e-bus-servo-drive/photo.jpg",
+        "front": "assets/images/products/sd20-e-bus-servo-drive/front.jpg",
+        "side": "assets/images/products/sd20-e-bus-servo-drive/side.jpg",
+        "back": "assets/images/products/sd20-e-bus-servo-drive/back.jpg",
+        "detail": "assets/images/products/sd20-e-bus-servo-drive/detail.jpg"
+      }
+    },
+    {
+      "slug": "sd20-g-servo-drive",
+      "name": "SD20-G General-Purpose Servo Drive System",
+      "short_name": "SD20-G Servo Drive",
+      "category": "General-Purpose Servo Drive System",
+      "group": "Servo Drives",
+      "tagline": "High-response, full-featured servo control from 100 W to 45 kW",
+      "summary": "Fully digital general-purpose servo drive with six control modes, 1.2 kHz response, 1:10,000 speed range, Modbus standard with CANopen/EtherCAT options, and 100 W–45 kW ratings.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "0.1–45 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "100 W – 45 kW (220 V / 380 V classes)"},
+        {"label": "Frequency response", "value": "1.2 kHz"},
+        {"label": "Speed control range", "value": "1:10,000, ±0.01% fluctuation"},
+        {"label": "Communication", "value": "Modbus standard; CANopen / EtherCAT optional"}
+      ],
+      "description": [
+        "The SD20-G is a fully digital general-purpose servo drive system designed to drive and control permanent magnet synchronous servo motors. Available in seven compact book-style frames (M1–M7), it covers 100 W to 7.5 kW on 220 V class power (single-phase or three-phase) and 1 kW to 45 kW on three-phase 380 V, making it suitable for everything from small precision axes to large industrial machinery.",
+        "Performance is anchored by a 1.2 kHz speed-loop frequency response, a 1:10,000 speed control range and ±0.01% speed fluctuation under 0–100% load. The drive supports all six fundamental control modes — position pulse, internal register position, analog speed, internal register speed, analog torque and internal register torque — plus switchable dual-mode combinations, so one drive can serve positioning, velocity and torque applications. Position commands accept differential or open-collector pulses at up to 500 kHz (4 MHz with high-speed differential input).",
+        "The SD20-G is built for easy integration and standalone intelligence: RS485 Modbus communication is standard, with optional CANopen and EtherCAT. An embedded PLC function, high-speed counter, electronic cam, gantry synchronization, full closed-loop control, online/offline inertia identification, auto gain adjustment and vibration suppression simplify commissioning, while a complete protection suite and a 5-digit LED keypad with parameter-copy function round out day-to-day operation."
+      ],
+      "features": [
+        {"title": "Six Control Modes + Dual-Mode", "text": "Position pulse, register position, analog speed, register speed, analog torque and register torque — ten dual-mode combinations switchable in real time."},
+        {"title": "High Dynamic Performance", "text": "1.2 kHz frequency response, 1:10,000 speed control range, ±0.01% speed fluctuation across 0–100% load."},
+        {"title": "High-Speed Pulse Interface", "text": "500 kHz differential / 200 kHz open-collector inputs, up to 4 MHz via high-speed differential; three pulse formats."},
+        {"title": "Flexible Encoder Support", "text": "Resolver, 2500 ppr incremental, 23-bit incremental, 17/23-bit absolute and 17-bit magnetic encoders; full closed-loop option."},
+        {"title": "Fieldbus Connectivity", "text": "RS485 Modbus standard; optional CANopen or EtherCAT for networked automation."},
+        {"title": "Built-in PLC & High-Speed Counter", "text": "Embedded programmable logic allows standalone operation without an external controller."},
+        {"title": "Advanced Motion Functions", "text": "Electronic cam, gantry synchronization, homing search, fixed-length interrupt, zero-speed clamp, S-curve smoothing."},
+        {"title": "Auto-Tuning & Protection", "text": "Online/offline inertia identification, automatic gain adjustment, vibration suppression, and a full protection suite with 5-digit LED keypad and parameter copy."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Power range (220 V)", "value": "0.1 – 7.5 kW (11 models)"},
+            {"label": "Power range (380 V)", "value": "1 – 45 kW (14 models)"},
+            {"label": "Input supply", "value": "1-phase/3-phase AC 220 V or 3-phase AC 380 V, ±10%, 50/60 Hz"},
+            {"label": "Continuous output current", "value": "1.2–35 Arms (220 V class); 3–90 Arms (380 V class)"},
+            {"label": "Output frequency", "value": "0–400 Hz"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Control modes", "value": "Position pulse / register position / analog speed / register speed / analog torque / register torque + dual modes"},
+            {"label": "Frequency response", "value": "1.2 kHz"},
+            {"label": "Speed control range", "value": "1:10,000"},
+            {"label": "Speed fluctuation", "value": "±0.01% (0–100% load)"},
+            {"label": "Input pulse frequency", "value": "500 kHz differential, 200 kHz open-collector, 4 MHz high-speed"},
+            {"label": "Electronic gear", "value": "0.01 ≤ B/A ≤ 100, two selectable groups"},
+            {"label": "Analog command input", "value": "DC ±10 V; built-in +24 V / 100 mA control power"}
+          ]
+        },
+        {
+          "group": "Communication & Feedback",
+          "items": [
+            {"label": "Encoder support", "value": "Resolver, 2500 ppr incremental (8/14-core), 23-bit incremental, 17-bit and 23-bit absolute, 17-bit magnetic"},
+            {"label": "Communication", "value": "RS485 Modbus (standard); CANopen / EtherCAT (optional)"},
+            {"label": "Display / keypad", "value": "5-digit LED display, 4 keys, status LEDs; parameter copy and password functions"}
+          ]
+        },
+        {
+          "group": "Protection & Compliance",
+          "items": [
+            {"label": "Protection functions", "value": "Overvoltage, undervoltage, overload, overcurrent, overspeed, encoder error, phase loss, regeneration error, overheat"},
+            {"label": "Braking", "value": "Dynamic or energy-consumption braking, built-in or external resistor (frame dependent)"},
+            {"label": "EMC / certification", "value": "EMC C3 grade (R3 filter option); CE / UL options"}
+          ]
+        }
+      ],
+      "models": "Model numbering: SD20-G [power code] [S2|T2|T3] [M1–M7] + option codes. Power codes: 101=100 W … 752=7.5 kW (220 V); 102=1 kW … 453=45 kW (380 V). Options: F0 Modbus / F4 CANopen / F5 EtherCAT; D20 resolver, D50/D51 incremental, D52 23-bit, D70/D71 absolute, D80 magnetic; B1/B2/B3/B6 braking. Example: SD20-G102T2M2.",
+      "applications": ["CNC / machine tools", "Packaging machinery", "Printing & converting", "Textile machinery", "Robotics & handling", "Electronics manufacturing", "Automated production lines"],
+      "images": {
+        "photo": "assets/images/products/sd20-g-servo-drive/photo.jpg",
+        "front": "assets/images/products/sd20-g-servo-drive/front.jpg",
+        "side": "assets/images/products/sd20-g-servo-drive/side.jpg",
+        "back": "assets/images/products/sd20-g-servo-drive/back.jpg",
+        "detail": "assets/images/products/sd20-g-servo-drive/detail.jpg"
+      }
+    },
+    {
+      "slug": "sde20-g-servo-drive",
+      "name": "SDE20-G High-Performance Servo Drive System",
+      "short_name": "SDE20-G Servo Drive",
+      "category": "High-Performance Single-Board Servo Drive",
+      "group": "Servo Drives",
+      "tagline": "1.2 kHz high-response precision servo in a slim single-board design",
+      "summary": "High-performance single-board servo drive, 200 W–1.8 kW, with 4 MHz pulse input, six control modes, Modbus standard and CANopen/EtherCAT options in a 50 mm slim frame.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "0.2–1.8 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "200 W – 1.8 kW (6 models)"},
+        {"label": "Input supply", "value": "1-phase / 3-phase 220 VAC"},
+        {"label": "Frequency response", "value": "1.2 kHz, 4 MHz pulse input"},
+        {"label": "Frame depth", "value": "50 / 58 mm slim book-style"}
+      ],
+      "description": [
+        "The SDE20-G is a high-performance general-purpose servo drive built on a compact single-board design for driving permanent magnet synchronous servo motors. Operating from single-phase or three-phase 220 VAC, it covers a 200 W – 1.8 kW power range across six models in two slim book-style formats (L2: 177×170×50 mm; L3: 176×180×58 mm), with continuous output currents of 1.5–8.0 Arms.",
+        "Engineered for demanding precision motion, the SDE20-G delivers a 1.2 kHz speed response frequency, ±0.01% speed fluctuation across 0–100% load, a 1:10,000 speed control range and 1-command-unit positioning accuracy. It accepts high-speed pulse commands up to 4 MHz and offers six control modes — pulse position, register position, analog speed, register speed, analog torque and register torque — combinable in mixed modes for complex motion sequences.",
+        "Auto-tuning intelligence — offline/online inertia identification, gain auto-adjustment, vibration suppression, model feedforward and friction compensation — simplifies commissioning, while a built-in PLC function and high-speed counter enable standalone sequence control. Communication is standard Modbus with RS485/RS232 for PC setup and monitoring, with optional CANopen and EtherCAT versions. With 17/23-bit absolute, 23-bit incremental and 17-bit magnetic encoder support, an integrated EMC C3-class filter and compliance with IEC/EN 61800-5-1 and 61800-3, the SDE20-G is a complete servo solution."
+      ],
+      "features": [
+        {"title": "High-Response Servo Performance", "text": "1.2 kHz speed response, ±0.01% speed fluctuation (0–100% load), 1:10,000 speed range, 1-command-unit positioning accuracy."},
+        {"title": "Six Control Modes + Mixed Modes", "text": "Pulse/register position, analog/register speed and analog/register torque control, freely combinable for complex motion."},
+        {"title": "4 MHz High-Speed Pulse Input", "text": "Standard 500 kHz differential and 200 kHz open-collector inputs plus 4 MHz high-speed input; dual switchable electronic gear groups."},
+        {"title": "Flexible Fieldbus Connectivity", "text": "Standard Modbus (USB) with RS485/RS232; optional CANopen and EtherCAT versions for networked automation."},
+        {"title": "Full Encoder Flexibility", "text": "Supports 17/23-bit absolute, 23-bit incremental and 17-bit magnetic encoders, with encoder cable runs up to 50 m."},
+        {"title": "Intelligent Auto-Tuning", "text": "Offline/online inertia identification, rigid-level auto gain adjustment, low-frequency vibration suppression, model feedforward and friction compensation."},
+        {"title": "Built-in PLC & High-Speed Counter", "text": "Standalone logic and counting capability without an external controller."},
+        {"title": "Comprehensive Protection", "text": "Class 1/Class 2 alarm protection, 4-key/5-digit LED panel, PC monitoring software, integrated EMC C3 filter."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Power range", "value": "200 / 400 / 750 W / 1.0 / 1.2 / 1.8 kW (6 models)"},
+            {"label": "Input supply", "value": "Single-phase 220 VAC (S2) or three-phase 220 VAC (T2), −15%~+10%, 50/60 Hz"},
+            {"label": "Output", "value": "3-phase, 0–220 V, 0–400 Hz"},
+            {"label": "Continuous output current", "value": "1.5 / 2.8 / 3.5 / 4.5 / 6.0 / 8.0 Arms"},
+            {"label": "Maximum output current", "value": "4.2 / 8.4 / 9.8 / 12.6 / 16.8 / 22.4 Arms"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Speed response frequency", "value": "1.2 kHz"},
+            {"label": "Speed fluctuation", "value": "±0.01% (0–100% load)"},
+            {"label": "Speed control range", "value": "1:10,000"},
+            {"label": "Control modes", "value": "Pt / Pr / Sz / Sr / Tz / Tr plus mixed modes"},
+            {"label": "Input pulse frequency", "value": "500 kHz differential, 200 kHz open-collector, up to 4 MHz"},
+            {"label": "Electronic gear ratio", "value": "0.01 ≤ B/A ≤ 100, two switchable groups"},
+            {"label": "Positioning accuracy", "value": "1 command unit"}
+          ]
+        },
+        {
+          "group": "Communication & Feedback",
+          "items": [
+            {"label": "Encoder support", "value": "17-bit absolute (D70), 23-bit absolute (D71), 23-bit incremental (D52), 17-bit magnetic (D80)"},
+            {"label": "Communication", "value": "Modbus via USB (default), RS485/RS232; options CANopen (F4), EtherCAT (F5)"},
+            {"label": "Braking", "value": "Built-in braking resistor; options B2 dynamic, B3 combined, B6 external"}
+          ]
+        },
+        {
+          "group": "Mechanical & Compliance",
+          "items": [
+            {"label": "Frame dimensions", "value": "L2: 177×170×50 mm; L3: 176×180×58 mm"},
+            {"label": "EMC", "value": "C3-class filter (R3) integrated"},
+            {"label": "Standards", "value": "IEC/EN 61800-5-1:2007; IEC/EN 61800-3:2004/+A1:2012"},
+            {"label": "Applicable load inertia", "value": "< 5× motor inertia"}
+          ]
+        }
+      ],
+      "models": "Model numbering: SDE20-G [power code 201/401/751/102/122/182] [S2|T2] [L2|L3] + function codes (communication F0/F4/F5, encoder D52/D70/D71/D80, brake B1/B2/B3/B6, filter R3). Example: SDE20-G751S2L2.",
+      "applications": ["Machine tools / CNC", "Industrial robotics", "Packaging machinery", "Printing machinery", "Textile machinery", "Electronics manufacturing", "Woodworking machinery", "Rubber & plastics", "Medical equipment", "Logistics & conveying"],
+      "images": {
+        "photo": "assets/images/products/sde20-g-servo-drive/photo.jpg",
+        "front": "assets/images/products/sde20-g-servo-drive/front.jpg",
+        "side": "assets/images/products/sde20-g-servo-drive/side.jpg",
+        "back": "assets/images/products/sde20-g-servo-drive/back.jpg",
+        "detail": "assets/images/products/sde20-g-servo-drive/detail.jpg"
+      }
+    },
+    {
+      "slug": "sd20-d-dual-axis-servo-drive",
+      "name": "SD20-D Dual-Axis Servo Drive System",
+      "short_name": "SD20-D Dual-Axis Drive",
+      "category": "Dual-Axis Servo Drive System",
+      "group": "Servo Drives",
+      "tagline": "One drive, two axes — double the precision in half the space",
+      "summary": "Dual-axis servo drive integrating two complete axes (0.2–1.8 kW each) in one book-style unit, with EtherCAT/CANopen variants and up to 2.5 kHz response.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "2 × 0.2–1.8 kW",
+      "key_specs": [
+        {"label": "Axes", "value": "2 axes in one unit, 0.2–1.8 kW per axis"},
+        {"label": "Input supply", "value": "1-phase / 3-phase AC 220 V"},
+        {"label": "Frequency response", "value": "2.5 kHz, ±0.01% speed fluctuation"},
+        {"label": "Fieldbus variants", "value": "EtherCAT / CANopen / pulse type"}
+      ],
+      "description": [
+        "The SD20-D series is a high-integration dual-axis AC servo drive system that packs two complete servo drive axes into a single compact book-style unit. By sharing one power-stage housing and wiring harness for both axes, it dramatically cuts cabinet space, wiring labor and overall system cost compared with two standalone drives — an ideal motion solution for multi-axis machines where space and cost are tight.",
+        "Built on an advanced motor-control algorithm with high-resolution feedback support, the SD20-D delivers a 2.5 kHz speed response, ±0.01% speed fluctuation, precise speed/torque control and smooth low-speed operation. Each axis provides 5 DI + 3 DO programmable I/O, and the drive supports 2500-line incremental, 23-bit incremental and 17/23-bit absolute encoders as well as resolvers, with full-closed-loop control supported.",
+        "Available in EtherCAT-type, CANopen-type and pulse-type variants, the SD20-D covers position, speed and torque applications across a broad range of automated machinery. Advanced functions include gantry synchronization, electronic cam, a built-in PLC, high-speed counter, homing search, interrupt fixed-length positioning and auto gain tuning with online inertia identification."
+      ],
+      "features": [
+        {"title": "Dual-Axis Integration", "text": "Two axes in one unit, saving up to ~50% of installation space and reducing wiring cost versus two single-axis drives."},
+        {"title": "Compact Book-Type Design", "text": "203 × 84 × 196 mm shared chassis for dense cabinet mounting."},
+        {"title": "High Dynamic Performance", "text": "2.5 kHz speed response, 1:10,000 speed range, ±0.01% speed fluctuation, 1-command-unit positioning accuracy."},
+        {"title": "Fieldbus Variants", "text": "Dedicated EtherCAT (CoE, DC sync, <1 μs jitter) and CANopen (CiA-301/402) models, plus pulse type with Modbus."},
+        {"title": "Flexible Encoder Support", "text": "2500-line incremental, 23-bit incremental, 17/23-bit absolute (battery-backed multiturn), resolver; full closed-loop."},
+        {"title": "Per-Axis Programmable I/O", "text": "5 DI + 3 DO per axis (10 DI + 6 DO total), with cross-axis expansion."},
+        {"title": "Advanced Motion Functions", "text": "Gantry synchronization, electronic cam, built-in PLC, high-speed counter, interrupt fixed-length positioning."},
+        {"title": "Auto-Tuning", "text": "Automatic gain tuning with online inertia identification keeps commissioning fast as load characteristics vary."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings (per axis)",
+          "items": [
+            {"label": "Axis power ratings", "value": "0.2 / 0.4 / 0.75 / 1.0 / 1.2 / 1.8 kW"},
+            {"label": "Continuous output current", "value": "1.5 / 2.8 / 3.5 / 4.5 / 6.0 / 8.0 Arms"},
+            {"label": "Maximum output current", "value": "4.2 / 8.4 / 9.8 / 12.6 / 16.8 / 22.4 Arms"},
+            {"label": "Input supply", "value": "Single- or three-phase AC 220 V ±10%, 50/60 Hz"},
+            {"label": "Output", "value": "0–220 V, 0–400 Hz"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Speed response", "value": "2.5 kHz"},
+            {"label": "Speed fluctuation", "value": "±0.01% (0–100% load)"},
+            {"label": "Speed control range", "value": "1:10,000"},
+            {"label": "Control modes", "value": "Pt / Pr / Sz / Sr / Tz / Tr plus mixed modes; CiA-402 modes on bus variants"},
+            {"label": "Pulse input", "value": "500 kHz differential / 200 kHz open-collector; 3 pulse formats"},
+            {"label": "Electronic gear", "value": "0.01 ≤ B/A ≤ 100, two switchable groups"}
+          ]
+        },
+        {
+          "group": "Communication & Feedback",
+          "items": [
+            {"label": "Communication", "value": "RS485/RS232 Modbus; EtherCAT variant (100 Mbit/s, DC sync); CANopen variant (CiA-301/402)"},
+            {"label": "Encoder support", "value": "2500-line incremental, 23-bit incremental, 17/23-bit absolute, resolver"},
+            {"label": "I/O", "value": "5 DI + 3 DO per axis, programmable"},
+            {"label": "Display / panel", "value": "5-digit LED, 5 keys, AXIS key switches A/B axis menus"}
+          ]
+        },
+        {
+          "group": "Environment",
+          "items": [
+            {"label": "Dimensions", "value": "203 × 84 × 196 mm (N2 frame)"},
+            {"label": "Protection rating", "value": "IP20"},
+            {"label": "Ambient temperature", "value": "−10 to +40 °C"},
+            {"label": "Applicable load inertia", "value": "< 5× motor inertia"}
+          ]
+        }
+      ],
+      "models": "Model numbering: SD20-D [A-axis power][B-axis power] [S2|T2] N2 + function code. Axis power codes: 02=0.2 kW, 04=0.4 kW, 08=0.75 kW, 10=1.0 kW, 12=1.2 kW, 18=1.8 kW. Function codes: encoder D50/D51/D52/D70/D71/D20, brake B1/B2/B3/B6, communication F0 Modbus / F4 CANopen / F5 EtherCAT. Example: SD20-D1010T2N2.",
+      "applications": ["Industrial robots", "CNC machine tools", "Automated production lines", "Packaging machinery", "Printing machinery", "Textile machinery", "Electronics manufacturing", "Medical devices", "Laser processing", "New-energy equipment"],
+      "images": {
+        "photo": "assets/images/products/sd20-d-dual-axis-servo-drive/photo.jpg",
+        "front": "assets/images/products/sd20-d-dual-axis-servo-drive/front.png",
+        "side": "assets/images/products/sd20-d-dual-axis-servo-drive/side.jpg",
+        "back": "assets/images/products/sd20-d-dual-axis-servo-drive/back.jpg",
+        "detail": "assets/images/products/sd20-d-dual-axis-servo-drive/detail.jpg"
+      }
+    },
+    {
+      "slug": "em30-integrated-inverter",
+      "name": "EM30 Motor-Drive Integrated Inverter (IP67)",
+      "short_name": "EM30 Integrated VFD",
+      "category": "Motor-Drive Integrated Inverter",
+      "group": "VFD Inverters",
+      "tagline": "IP67-rated, motor-mounted VFD power for wet, dusty and high-vibration duty",
+      "summary": "Motor-drive integrated inverter with IP66/IP67 protection and 4g vibration resistance, 0.4–11 kW, supporting induction and PMSM motors with pump/fan intelligence.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "IP67 · 0.4–11 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "0.4 – 11 kW"},
+        {"label": "Input voltage", "value": "1-phase 230 V / 3-phase 230 V / 3-phase 400 V"},
+        {"label": "Protection rating", "value": "IP66 / IP67, 4g vibration resistance"},
+        {"label": "Motor types", "value": "Induction (VVVF/SVC) + PMSM (SVC)"}
+      ],
+      "description": [
+        "The EM30 is a motor-drive integrated variable frequency drive engineered to mount directly onto the motor it controls, eliminating cabinet installation and long motor cables. Housed in a die-cast aluminum enclosure with anti-fingerprint finish, it delivers IP66/IP67 protection and 4g vibration resistance, making it suitable for humid, dusty and high-vibration environments where conventional drives cannot survive. Its open-type heatsink ensures reliable cooling and easy cleaning, and the fan is pluggable for quick service.",
+        "Available from 0.4 kW to 11 kW in three voltage classes, the EM30 supports both induction motors (VVVF and sensorless vector control) and permanent magnet synchronous motors (SVC), with speed and torque control modes. It delivers 150% starting torque at 0.5 Hz, a 1:100 speed range, ±0.5% steady-speed accuracy and a torque response under 20 ms — performance suitable for demanding loads.",
+        "Designed around pump and fan applications, it includes built-in PID closed-loop control, dry-run and pressure protection, master-slave water supply control and time-period scheduling. A brake unit is built in, EMC C2/C3 filters are optional, and it carries CE certification. The segment LCD or four-line LCD keypad can be installed in four orientations, with Bluetooth and IP67-dedicated panel options."
+      ],
+      "features": [
+        {"title": "IP66/IP67, 4g Anti-Vibration", "text": "Fully sealed die-cast aluminum housing operates in humid, dusty and vibrating environments."},
+        {"title": "True Motor-Drive Integration", "text": "Mounts directly on the motor via EJ-series adapter plates, or wall-mounts with an optional bracket; split top/bottom cover for easy wiring."},
+        {"title": "Dual Motor Technology", "text": "Asynchronous (induction) motors with VVVF/SVC control and permanent magnet synchronous motors with SVC."},
+        {"title": "High-Performance Vector Control", "text": "0.5 Hz / 150% starting torque, 1:100 speed range, ±0.5% speed accuracy, <20 ms torque response."},
+        {"title": "Pump & Fan Intelligence", "text": "Built-in PID, dry-run and pressure protection, water-supply master-slave control, time-period control and sleep functions."},
+        {"title": "Built-In Brake + Serviceability", "text": "Integrated brake unit (external resistor), pluggable fan and open heatsink for easy cleaning and maintenance."},
+        {"title": "Flexible HMI & Connectivity", "text": "Segment or 4-line LCD keypad installable in 4 orientations, Bluetooth option, parameter copy unit, Modbus communication."},
+        {"title": "Comprehensive Protection", "text": "Full protection set with optional EMC C3 filter; CE certified (J0/J1 UL-capable; STO option on J0)."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Power range", "value": "0.4 – 11 kW (adapted motor power)"},
+            {"label": "Input voltage", "value": "1-phase 220–240 V; 3-phase 220–240 V; 3-phase 380–480 V; 50/60 Hz"},
+            {"label": "Output frequency", "value": "0.50 – 590.0 Hz (≤500 Hz in vector control)"},
+            {"label": "Overload capacity", "value": "150% for 60 s"},
+            {"label": "Efficiency", "value": "≥ 93%"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Control modes", "value": "Induction motor VVVF / SVC; PM synchronous motor SVC; speed and torque control"},
+            {"label": "Starting torque", "value": "150% at 0.5 Hz (SVC)"},
+            {"label": "Speed range", "value": "1:100 (async SVC); 1:20 (PMSM SVC)"},
+            {"label": "Steady-speed accuracy", "value": "±0.5%"},
+            {"label": "Torque response", "value": "< 20 ms; torque control accuracy ±5%"},
+            {"label": "Carrier frequency", "value": "0.8 – 16 kHz (fixed or random)"}
+          ]
+        },
+        {
+          "group": "I/O & Communication",
+          "items": [
+            {"label": "Analog I/O", "value": "2 × AI (0–5 V / 0–10 V / 0–20 mA), 2 × AO"},
+            {"label": "Digital I/O", "value": "5 × DI + 1 high-speed pulse input (100 kHz), 1 × DO, 2 × relay outputs"},
+            {"label": "Communication", "value": "Modbus"},
+            {"label": "Keypad", "value": "Segment LCD or 4-line LCD, 4-way mounting, Bluetooth option, IP67-dedicated panel"}
+          ]
+        },
+        {
+          "group": "Protection & Environment",
+          "items": [
+            {"label": "Protection rating", "value": "IP66 / IP67; vibration 4g"},
+            {"label": "Protection functions", "value": "Phase loss, overcurrent, overload, overheat, ground short, dry-run, pressure protection and more"},
+            {"label": "Housings", "value": "J0: 240×157×151 mm; J1: 270×190×165 mm; J2: 338×228×193.5 mm"},
+            {"label": "Environment", "value": "−10 to +40 °C, ≤90% RH, altitude ≤1000 m"},
+            {"label": "Certification", "value": "CE (J0/J1 satisfy UL); STO available on J0"}
+          ]
+        }
+      ],
+      "models": "Model numbering: EM30-[power code][S2|T2|T3][J0|J1|J2] + options. Power codes 0004–0110 (0.4–11 kW); P7 = IP67 (blank = IP66); IC1 wall bracket; M1/M2 induction/PM motor; R3 C3 EMC filter; B1 braking; C21 clock card; AC01–AC16 keypad options; F2 Modbus; U-series certifications. Example: EM30-0007T3J1.",
+      "applications": ["Water pumps & supply systems", "Booster stations & irrigation", "Fans & ventilation", "Outdoor installations", "Washing / wash-down environments", "Dust-laden plant areas", "High-vibration equipment"],
+      "images": {
+        "photo": "assets/images/products/em30-integrated-inverter/photo.png",
+        "front": "assets/images/products/em30-integrated-inverter/front.png",
+        "side": "assets/images/products/em30-integrated-inverter/side.png",
+        "back": "assets/images/products/em30-integrated-inverter/back.png",
+        "detail": "assets/images/products/em30-integrated-inverter/detail.png"
+      }
+    },
+    {
+      "slug": "e800-vector-inverter",
+      "name": "E800 Series General Vector Inverter",
+      "short_name": "E800 Vector VFD",
+      "category": "General Vector Inverter (VFD)",
+      "group": "VFD Inverters",
+      "tagline": "High-performance vector control from 0.2 to 450 kW",
+      "summary": "General-purpose vector inverter covering 0.2–450 kW with V/F and sensorless vector control for induction and PM motors, built-in PID, multi-pump control and Modbus RTU.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "0.2–450 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "0.2 – 450 kW"},
+        {"label": "Input voltage", "value": "1-phase 220–240 V / 3-phase 230 V / 3-phase 380–480 V"},
+        {"label": "Control modes", "value": "V/F, SVC (induction), SVC (PMSM)"},
+        {"label": "Starting torque", "value": "150% at 0.5 Hz"}
+      ],
+      "description": [
+        "The E800 Series is a general-purpose vector inverter covering an applicable motor range of 0.2–450 kW across single-phase 220–240 V, three-phase 230 V and three-phase 380–480 V supplies. Combining advanced motor control with a compact footprint, it delivers V/F control and open-loop sensorless vector control for both induction motors and PMSM permanent magnet synchronous motors, producing 150% starting torque at just 0.5 Hz, a 1:100 speed control range and ±0.5% steady-state speed precision.",
+        "Built for real-world industrial automation, the E800 offers 15-stage speed control, built-in PID for process closed-loop regulation, auto voltage regulation, DC braking, speed-tracing restart, and dedicated multi-pump control with sleep/wake dormancy for constant-pressure water supply systems. Frequency reference and command channels are fully flexible: keypad, control terminals, analog signals or Modbus RTU over the built-in RS-485 port.",
+        "Housed in a compact wall-mounted format — flame-retardant polycarbonate up to 45 kW and powder-coated metal cabinets from 55–450 kW — the drive integrates a removable LED keypad, optional built-in braking unit, optional EMI filter and optional DC choke. Comprehensive protection functions and CE / UL certification make the E800 a dependable choice for continuous industrial duty."
+      ],
+      "features": [
+        {"title": "High-Performance Vector Control", "text": "V/F (VVVF), open-loop vector for induction motors and SVC for PMSM; 0.5 Hz/150% start torque, 1:100 speed range, ±0.5% steady speed precision."},
+        {"title": "Wide Power & Voltage Coverage", "text": "0.2–450 kW across 1-phase 220–240 V, 3-phase 230 V and 3-phase 380–480 V inputs; output up to 590 Hz."},
+        {"title": "Built-In PID & Multi-Pump Control", "text": "Process closed-loop control plus pump interchange logic with sleep/wake function for water-supply systems."},
+        {"title": "15-Stage Speed + Jog Control", "text": "Auto-circulating or terminal-controlled multi-speed running with 0.1–3000 s jog times."},
+        {"title": "Modbus RTU Communication", "text": "Built-in RS-485 with three command channels and four frequency sources plus five auxiliary sources."},
+        {"title": "Integrated Braking & Filtering", "text": "Built-in braking unit standard on 3-phase 400 V models ≤30 kW; optional C3 EMI filter and DC choke."},
+        {"title": "Robust Protection & Reliability", "text": "Phase loss, over/under-voltage, overcurrent, 120%/60 s overload, stall and overheat protection; IP20, −10 to +40 °C."},
+        {"title": "Certified Quality", "text": "CE (≤450 kW) and UL+CE (≤22 kW); designed to IEC/EN 61800-5-1 and 61800-3."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Applicable motor power", "value": "0.2 – 450 kW"},
+            {"label": "Input voltage", "value": "1-phase 220–240 V; 3-phase 230 V; 3-phase 380–480 V; 50/60 Hz"},
+            {"label": "Output", "value": "3-phase, 0 V to input voltage; 0.50 – 590.0 Hz"},
+            {"label": "Overload capacity", "value": "120% rated current for 60 s"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Control modes", "value": "V/F (VVVF); open-loop sensorless vector (SVC); SVC for PMSM"},
+            {"label": "Starting torque", "value": "150% at 0.5 Hz"},
+            {"label": "Speed control range", "value": "1:100"},
+            {"label": "Steady speed precision", "value": "±0.5%"},
+            {"label": "Carrier frequency", "value": "0.8 – 10 kHz, fixed or random"},
+            {"label": "V/F curves", "value": "Linear, square, user-defined"},
+            {"label": "Startup modes", "value": "Direct start, speed-tracing (flying) restart, DC braking 0.2–50 Hz"}
+          ]
+        },
+        {
+          "group": "I/O & Communication",
+          "items": [
+            {"label": "Control terminals", "value": "DI1–DI8, AI1/AI2, AO1/AO2, relay TA/TB/TC, DO1, 24 V/10 V/5 V supplies, remote keypad port"},
+            {"label": "Frequency setting", "value": "Keypad, potentiometer, 0–10 V, 0–20 mA, Modbus"},
+            {"label": "Communication", "value": "Modbus RTU via RS-485"}
+          ]
+        },
+        {
+          "group": "Construction & Compliance",
+          "items": [
+            {"label": "Housing", "value": "Plastic 0.2–45 kW; metal cabinet 55–450 kW; wall-mounted"},
+            {"label": "Protection rating", "value": "IP20, air-cooled"},
+            {"label": "Environment", "value": "−10 to +40 °C, ≤90% RH, ≤0.5 g vibration, ≤1000 m altitude"},
+            {"label": "Certification", "value": "CE ≤450 kW; UL+CE ≤22 kW"}
+          ]
+        }
+      ],
+      "models": "Model numbering: E800-[power ×10][S2|T2|T3]. S2 (1-phase): 0.2–2.2 kW; T2 (3-phase 230 V): 0.2–2.2 kW; T3 (3-phase 400 V): 0.2–45 kW plastic, 55–450 kW metal. Optional suffixes: certificate (U1 CE / U5 UL+CE), F2 Modbus, keypad options, B1 braking, R3 C3 filter, L1 DC choke. Example: E800-0007T3.",
+      "applications": ["Textile machinery", "Machine tools", "Packaging machinery", "Food & beverage processing", "Printing", "Ceramics", "Fans & pumps", "Water supply systems", "Conveying lines"],
+      "images": {
+        "photo": "assets/images/products/e800-vector-inverter/photo.png",
+        "front": "assets/images/products/e800-vector-inverter/front.png",
+        "side": "assets/images/products/e800-vector-inverter/side.png",
+        "back": "assets/images/products/e800-vector-inverter/back.png",
+        "detail": "assets/images/products/e800-vector-inverter/detail.png"
+      }
+    },
+    {
+      "slug": "ep66-inverter",
+      "name": "EP66 High-Protection Inverter (IP66)",
+      "short_name": "EP66 IP66 VFD",
+      "category": "High Protection Inverter (VFD)",
+      "group": "VFD Inverters",
+      "tagline": "IP66-rugged frequency inverter built for dust, water jets and harsh conditions",
+      "summary": "IP66/NEMA 4 wall-mounted inverter, 0.4–90 kW, with V/F and sensorless vector control, standard C3 EMC filter, and space for built-in customer options.",
+      "price": null,
+      "price_note": "Contact us for pricing",
+      "badge": "IP66 · 0.4–90 kW",
+      "key_specs": [
+        {"label": "Power range", "value": "0.4 – 90 kW"},
+        {"label": "Protection rating", "value": "IP66 (NEMA 4 referenced)"},
+        {"label": "Control modes", "value": "V/F, SVC, PMSM SVC"},
+        {"label": "EMC", "value": "C3 filter standard, C1 optional"}
+      ],
+      "description": [
+        "The EP66 series is a high-protection-grade frequency inverter built for the harshest environments. With rugged IP66/NEMA 4 construction compliant with EN 60529, the drive is completely dust-tight and fully protected against jets of water and heavy waves — allowing wall-mounted, cabinet-free installation in locations where ordinary inverters cannot survive. A removable cable conduit plate with humidity-barrier vent keeps moisture out, while polycarbonate (≤15 kW) and metal (18.5–90 kW) housings deliver durable, corrosion-resistant performance from 0.4 kW to 90 kW.",
+        "At its heart, a DSP-based motor control platform supports V/F control, sensorless vector control and PMSM sensorless vector control in speed or torque modes, delivering 150% starting torque at just 0.5 Hz, a 1:100 speed control range and ±0.5% steady-state speed precision. Intelligent autotuning makes setup quick, and all standard inverter functions are built in — 15-stage speed control, built-in PID, auto voltage regulation, DC braking, speed-track starting and jog control.",
+        "Designed for real-world convenience, the EP66 offers space inside the drive for customer options such as a main/emergency switch, start/stop selectors, a potentiometer and a brake resistor, plus an optional built-in bypass switch. A C3-class EMC filter is standard. Smart PC tools support control and troubleshooting, and configurable LCD keypads are remote-mountable via waterproof connector. CE and UL certifications make it ready for the worldwide market."
+      ],
+      "features": [
+        {"title": "IP66/NEMA 4 Rugged Construction", "text": "Dust-tight and fully protected against powerful water jets (EN 60529); installs cabinet-free in harsh, wet and dusty locations."},
+        {"title": "Versatile Motor Control Platform", "text": "DSP-based control for V/F, sensorless vector (SVC) and PM synchronous motor control in speed or torque mode."},
+        {"title": "High Torque, High Precision", "text": "150% starting torque at 0.5 Hz, 100% rated torque at 5% rated speed (PMSM), 1:100 speed range, ±0.5% steady speed precision."},
+        {"title": "Intelligent Autotuning", "text": "Quick, automatic motor setup for easy commissioning."},
+        {"title": "Space for Built-In Options", "text": "Main/emergency switch, start/stop selectors, potentiometer, brake resistor and optional bypass switch inside the drive."},
+        {"title": "Standard EMC Filtering", "text": "C3-class filter as standard; optional built-in C1 filter for residential environments."},
+        {"title": "Comprehensive Built-In Functions", "text": "15-stage speed running, auto circulating, built-in PID, AVR, DC braking, speed-track startup, 150%/60 s overload."},
+        {"title": "Smart Connectivity & HMI", "text": "RS-485 Modbus (CAN option), remote-mountable 1-/4-line LCD keypads via waterproof connector, smart PC tools."}
+      ],
+      "specifications": [
+        {
+          "group": "Ratings",
+          "items": [
+            {"label": "Applicable motor power", "value": "0.4 – 90 kW (25 models)"},
+            {"label": "Input voltage", "value": "3-phase 380–480 V (T3); 1-phase 220–240 V (S2); 3-phase 220–240 V (T2); 50/60 Hz"},
+            {"label": "Output frequency", "value": "0.50 – 650.0 Hz"},
+            {"label": "Overload capacity", "value": "150% rated current for 60 s"},
+            {"label": "Housings", "value": "I1–I6 wall-hanging; plastic ≤15 kW, metal 18.5–90 kW"}
+          ]
+        },
+        {
+          "group": "Control Performance",
+          "items": [
+            {"label": "Control modes", "value": "Sensorless vector (SVC), V/F, PMSM sensorless vector"},
+            {"label": "Starting torque", "value": "150% at 0.5 Hz (SVC); 100% at 5% rated speed (PMSM)"},
+            {"label": "Speed control range", "value": "1:100 (SVC); 1:20 (PMSM)"},
+            {"label": "Steady speed precision", "value": "±0.5%; torque control precision ±5%"},
+            {"label": "Carrier frequency", "value": "8 – 16 kHz (fixed or random)"}
+          ]
+        },
+        {
+          "group": "I/O & Communication",
+          "items": [
+            {"label": "Digital I/O", "value": "Up to 8 multi-function DI (DI1 up to 50 kHz), 2 DO (up to 100 kHz), relay TA/TB/TC"},
+            {"label": "Analog I/O", "value": "AI 0–5 V / 0–10 V / 0–20 mA; AO 0–10 V / 0–20 mA"},
+            {"label": "Communication", "value": "RS-485 Modbus 1200–57600 bps; optional CAN + Modbus (F15)"},
+            {"label": "Keypad", "value": "1-line or 4-line LCD (EN/CN), remote-mountable with waterproof connector"}
+          ]
+        },
+        {
+          "group": "Protection & Compliance",
+          "items": [
+            {"label": "Protection rating", "value": "IP66 (EN 60529); NEMA 4 referenced"},
+            {"label": "Protection functions", "value": "Phase loss, under/over-voltage, overcurrent, overload, stall, overheat, under-load, pressure control, STO"},
+            {"label": "Environment", "value": "−10 to +40 °C; altitude ≤1000 m; vibration <0.5 g"},
+            {"label": "Certification", "value": "CE / CE+UL depending on structure"}
+          ]
+        }
+      ],
+      "models": "Model numbering: EP66-[power mark][S2|T2|T3][I1–I6] + options. Power marks 0004–0900 (0.4–90 kW). Options: U1 CE / U5 CE+UL; AD01–AD04 keypads; G1 master switch; B1 braking; R3 C3 EMC filter (C1 optional). Example: EP66-0007T3I1.",
+      "applications": ["Food & beverage processing", "Water treatment", "Chemical processing", "Outdoor installations", "Wash-down environments", "Dust-exposed plants", "Pumping stations", "Industrial & civil retrofit"],
+      "images": {
+        "photo": "assets/images/products/ep66-inverter/photo.png",
+        "front": "assets/images/products/ep66-inverter/front.png",
+        "side": "assets/images/products/ep66-inverter/side.png",
+        "back": "assets/images/products/ep66-inverter/back.png",
+        "detail": "assets/images/products/ep66-inverter/detail.png"
+      }
+    }
+  ]
+}
