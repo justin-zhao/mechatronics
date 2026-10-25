@@ -26,7 +26,7 @@ E = escape
 # ---------------------------------------------------------------- SEO
 # Live domain — set to the deployed URL (e.g. "https://mechatronics.example.com")
 # before regenerating to produce sitemap.xml and the robots.txt Sitemap line.
-DOMAIN = ""
+DOMAIN = "https://mechatronics.farflight.cc"
 
 SITE_KEYWORDS_EN = ("FarFlight Mechatronics, industrial servo motor, permanent magnet synchronous servo motor, "
     "servo drive system, servo drive, servo amplifier, VFD inverter, variable frequency drive, vector inverter, "
