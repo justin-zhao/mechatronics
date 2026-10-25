@@ -1,5 +1,7 @@
-export const GATEWAY = "https://openapi.alipay.com/gateway.do";
-export const SITE_URL = "https://mechatronics.farflight.cc";
+const GATEWAY = "https://openapi.alipay.com/gateway.do";
+const SITE_URL = "https://mechatronics.farflight.cc";
+
+/* ---------------- crypto helpers ---------------- */
 
 function b64ToBytes(b64) {
   const bin = atob(b64);
@@ -55,7 +57,7 @@ async function importPublicKey(raw) {
   );
 }
 
-export function signContent(params) {
+function signContent(params) {
   return Object.keys(params)
     .filter(function (k) { return k !== "sign" && k !== "sign_type"; })
     .sort()
@@ -63,7 +65,7 @@ export function signContent(params) {
     .join("&");
 }
 
-export async function rsaSign(content, privateKeyRaw) {
+async function rsaSign(content, privateKeyRaw) {
   const key = await importPrivateKey(privateKeyRaw);
   const sig = await crypto.subtle.sign("RSASSA-PKCS1-v1_5", key, new TextEncoder().encode(content));
   const arr = new Uint8Array(sig);
@@ -72,13 +74,13 @@ export async function rsaSign(content, privateKeyRaw) {
   return btoa(bin);
 }
 
-export async function rsaVerify(content, signatureB64, publicKeyRaw) {
+async function rsaVerify(content, signatureB64, publicKeyRaw) {
   const key = await importPublicKey(publicKeyRaw);
   const sig = b64ToBytes(String(signatureB64 || "").replace(/\s+/g, ""));
   return crypto.subtle.verify("RSASSA-PKCS1-v1_5", key, sig, new TextEncoder().encode(content));
 }
 
-export function nowBeijing() {
+function nowBeijing() {
   const fmt = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Shanghai",
     year: "numeric", month: "2-digit", day: "2-digit",
@@ -90,7 +92,7 @@ export function nowBeijing() {
   return p.year + "-" + p.month + "-" + p.day + " " + p.hour + ":" + p.minute + ":" + p.second;
 }
 
-export function getConfig(env) {
+function getConfig(env) {
   return {
     appId: env.ALIPAY_APP_ID || env.APP_ID || env.ALIPAY_APPID || "",
     privateKey: env.ALIPAY_PRIVATE_KEY || env.APP_PRIVATE_KEY || env.PRIVATE_KEY || "",
@@ -98,7 +100,9 @@ export function getConfig(env) {
   };
 }
 
-export async function triggerEvents(p, env) {
+/* ---------------- payment events ---------------- */
+
+async function triggerEvents(p, env) {
   const details = [
     "=== Alipay Payment Received / 支付宝收款通知 ===",
     "Order No / 订单编号: " + (p.out_trade_no || ""),
@@ -160,3 +164,149 @@ export async function triggerEvents(p, env) {
   const results = await Promise.allSettled(jobs);
   return results.some(function (r) { return r.status === "fulfilled"; });
 }
+
+/* ---------------- API handlers ---------------- */
+
+async function handlePay(request, env) {
+  const cfg = getConfig(env);
+  if (!cfg.appId || !cfg.privateKey) {
+    return Response.json(
+      { ok: false, error: "Alipay API is not configured. Set ALIPAY_APP_ID and ALIPAY_PRIVATE_KEY in Cloudflare environment variables (Production)." },
+      { status: 500 }
+    );
+  }
+
+  let data;
+  try {
+    data = await request.json();
+  } catch (e) {
+    return Response.json({ ok: false, error: "Invalid JSON body" }, { status: 400 });
+  }
+
+  const orderNo = String(data.orderNo || "").trim();
+  const amount = Number(data.amount);
+  const subject = String(data.subject || "").trim().slice(0, 256);
+  const body = String(data.body || "").trim().slice(0, 128);
+
+  if (!/^[A-Za-z0-9_-]{6,64}$/.test(orderNo)) {
+    return Response.json({ ok: false, error: "Invalid order number (6-64 chars, letters/digits/-/_)" }, { status: 400 });
+  }
+  if (!amount || amount < 0.01 || amount > 100000 || isNaN(amount)) {
+    return Response.json({ ok: false, error: "Invalid amount (0.01 - 100000 CNY)" }, { status: 400 });
+  }
+  if (!subject) {
+    return Response.json({ ok: false, error: "Missing subject" }, { status: 400 });
+  }
+
+  const params = {
+    app_id: cfg.appId,
+    method: "alipay.trade.page.pay",
+    charset: "utf-8",
+    sign_type: "RSA2",
+    timestamp: nowBeijing(),
+    version: "1.0",
+    notify_url: SITE_URL + "/api/alipay/notify",
+    return_url: SITE_URL + "/api/alipay/return",
+    biz_content: JSON.stringify({
+      out_trade_no: orderNo,
+      product_code: "FAST_INSTANT_TRADE_PAY",
+      total_amount: amount.toFixed(2),
+      subject: subject,
+      body: body
+    })
+  };
+
+  try {
+    params.sign = await rsaSign(signContent(params), cfg.privateKey);
+  } catch (e) {
+    return Response.json({ ok: false, error: "Signing failed: " + (e && e.message ? e.message : e) }, { status: 500 });
+  }
+
+  return Response.json({ ok: true, gateway: GATEWAY, params: params });
+}
+
+async function handleNotify(request, env) {
+  const cfg = getConfig(env);
+  if (!cfg.publicKey) {
+    return new Response("failure");
+  }
+
+  const params = {};
+  try {
+    const form = await request.formData();
+    for (const entry of form.entries()) {
+      if (typeof entry[1] === "string") params[entry[0]] = entry[1];
+    }
+  } catch (e) {
+    return new Response("failure");
+  }
+
+  if (!params.sign) return new Response("failure");
+
+  let verified = false;
+  try {
+    verified = await rsaVerify(signContent(params), params.sign, cfg.publicKey);
+  } catch (e) {
+    verified = false;
+  }
+  if (!verified) return new Response("failure");
+
+  const status = params.trade_status || "";
+  if (status === "TRADE_SUCCESS" || status === "TRADE_FINISHED") {
+    const anySent = await triggerEvents(params, env);
+    return new Response(anySent ? "success" : "failure");
+  }
+
+  return new Response("success");
+}
+
+async function handleReturn(request, env) {
+  const url = new URL(request.url);
+  const params = {};
+  url.searchParams.forEach(function (v, k) { params[k] = v; });
+
+  let ok = false;
+  try {
+    const cfg = getConfig(env);
+    if (cfg.publicKey && params.sign) {
+      ok = await rsaVerify(signContent(params), params.sign, cfg.publicKey);
+    }
+  } catch (e) {
+    ok = false;
+  }
+
+  const orderNo = params.out_trade_no || "";
+  return Response.redirect(
+    SITE_URL + "/payment.html?paid=" + (ok ? "1" : "0") + "&order=" + encodeURIComponent(orderNo),
+    302
+  );
+}
+
+/* ---------------- worker entry ---------------- */
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    const path = url.pathname;
+
+    if (path === "/api/alipay/pay" && request.method === "POST") return handlePay(request, env);
+    if (path === "/api/alipay/notify" && request.method === "POST") return handleNotify(request, env);
+    if (path === "/api/alipay/return" && request.method === "GET") return handleReturn(request, env);
+
+    if (path.startsWith("/api/")) {
+      return Response.json({ ok: false, error: "Not found" }, { status: 404 });
+    }
+
+    const assetRes = await env.ASSETS.fetch(request);
+    if (assetRes.status === 404) {
+      const nf = await env.ASSETS.fetch(new Request(new URL("/404.html", url).toString()));
+      if (nf.status === 200) {
+        return new Response(nf.body, {
+          status: 404,
+          headers: { "Content-Type": "text/html; charset=utf-8" }
+        });
+      }
+    }
+    return assetRes;
+  }
+};

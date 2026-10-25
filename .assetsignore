@@ -1,0 +1,9 @@
+# Files excluded from static asset serving
+_worker.js
+.assetsignore
+.gitignore
+tools/
+data/
+functions/
+keywords.txt
+*.py
