@@ -221,7 +221,88 @@
           "Hello FarFlight, I have paid. " + text));
         mailto.style.display = "";
         wame.style.display = "";
+        var pbtn = $("#pay-alipay");
+        if (pbtn) pbtn.style.display = "";
       });
+    }
+
+    /* Alipay online payment (developer API) */
+    var payBtn = $("#pay-alipay");
+    if (payBtn) {
+      payBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var o = collect();
+        if (!valid(o)) return;
+        var amount = parseFloat($("#of-amount").value);
+        if (!amount || amount < 0.01) { alert("Please enter the payment amount (CNY) / 请填写付款金额（元）"); return; }
+        var num = onumEl.textContent;
+        if (!num || num === "—") { alert("Please generate your order number first / 请先生成订单编号"); return; }
+        payBtn.disabled = true;
+        payBtn.style.opacity = "0.6";
+        var st = $("#pay-status");
+        var showPay = function (html, cls) {
+          if (!st) return;
+          st.className = "form-status show" + (cls ? " " + cls : "");
+          $("#pay-status-text").innerHTML = html;
+          st.scrollIntoView({ behavior: "smooth", block: "center" });
+        };
+        showPay("Redirecting to the Alipay cashier… / 正在跳转支付宝收银台…", "");
+        fetch("/api/alipay/pay", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            orderNo: num,
+            amount: amount,
+            subject: o.product + (o.model ? " " + o.model : "") + " x" + o.qty,
+            body: (o.name + " | " + o.contact).slice(0, 128)
+          })
+        }).then(function (r) {
+          return r.json();
+        }).then(function (res) {
+          if (!res.ok) {
+            showPay("<strong>Payment initialization failed / 支付发起失败</strong><br>" + (res.error || "Unknown error / 未知错误"), "err");
+            payBtn.disabled = false;
+            payBtn.style.opacity = "";
+            return;
+          }
+          var f = document.createElement("form");
+          f.method = "POST";
+          f.action = res.gateway;
+          Object.keys(res.params).forEach(function (k) {
+            var inp = document.createElement("input");
+            inp.type = "hidden";
+            inp.name = k;
+            inp.value = res.params[k];
+            f.appendChild(inp);
+          });
+          document.body.appendChild(f);
+          f.submit();
+        }).catch(function () {
+          showPay("<strong>Network error / 网络错误</strong> — please try again / 请重试", "err");
+          payBtn.disabled = false;
+          payBtn.style.opacity = "";
+        });
+      });
+    }
+
+    /* Payment return banner */
+    var paid = params.get("paid");
+    if (paid === "1" || paid === "0") {
+      var banner = $("#paid-banner");
+      if (banner) {
+        banner.style.display = "block";
+        if (paid === "1") {
+          var ord = params.get("order");
+          if (ord) {
+            var oe = $("#paid-order");
+            if (oe) oe.textContent = ord;
+          }
+        } else {
+          banner.classList.remove("ok");
+          banner.innerHTML = "<strong>Payment status is being confirmed / 付款结果确认中</strong> — we will verify your payment and contact you shortly. / 我们正在确认您的付款，将尽快与您联系。";
+        }
+        banner.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
     }
 
     var copyBtn = $("#copy-order");

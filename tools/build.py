@@ -664,6 +664,9 @@ def page_payment():
 
 <section class="section">
   <div class="container">
+    <div class="form-status ok" id="paid-banner" style="display:none;margin-bottom:26px;">
+      <strong>✓ Payment successful / 支付成功！</strong> We have received your payment for order <strong id="paid-order"></strong>. A confirmation will be sent to you shortly. / 我们已收到您的款项，将尽快与您联系确认订单。
+    </div>
     <div class="pay-steps">
       <div class="pay-step">
         <div class="step-num">1</div>
@@ -674,8 +677,8 @@ def page_payment():
       <div class="pay-step">
         <div class="step-num">2</div>
         <h3>Pay via Alipay / 支付宝付款</h3>
-        <p>Scan the Alipay QR code on the right to pay. <strong>Include your order number, product model, quantity and contact in the payment note.</strong></p>
-        <p class="zh">扫描右侧支付宝二维码付款。<strong>付款时请务必备注订单编号、商品型号、数量及联系方式。</strong></p>
+        <p>Scan the Alipay QR code, or click <strong>Pay Online with Alipay</strong> (shown after you generate your order number) to pay directly on the official Alipay page. Online payments are confirmed to us automatically.</p>
+        <p class="zh">扫描支付宝二维码，或生成订单编号后点击<strong>「支付宝在线支付」</strong>按钮，跳转支付宝官方收银台直接付款，付款后系统自动通知我们。</p>
       </div>
       <div class="pay-step">
         <div class="step-num">3</div>
@@ -697,14 +700,18 @@ def page_payment():
 {options}
             </select>
           </div>
+          <div class="form-group">
+            <label for="of-model">Model / Power Rating / 型号·功率</label>
+            <input type="text" id="of-model" placeholder="e.g. SD20-E102T2M2 / 1 kW">
+          </div>
           <div class="form-row">
-            <div class="form-group">
-              <label for="of-model">Model / Power Rating / 型号·功率</label>
-              <input type="text" id="of-model" placeholder="e.g. SD20-E102T2M2 / 1 kW">
-            </div>
             <div class="form-group">
               <label for="of-qty">Quantity / 数量 <span style="color:#d05050">*</span></label>
               <input type="number" id="of-qty" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+              <label for="of-amount">Amount (CNY) / 付款金额（元） <span style="color:#d05050">*</span></label>
+              <input type="number" id="of-amount" min="0.01" step="0.01" placeholder="e.g. 5800.00">
             </div>
           </div>
           <div class="form-row">
@@ -744,10 +751,12 @@ def page_payment():
               </table>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+              <a class="btn btn-accent btn-sm" id="pay-alipay" href="#" style="display:none;">{ICONS['cart']} Pay Online with Alipay / 支付宝在线支付</a>
               <a class="btn btn-primary btn-sm" id="confirm-mail" href="#" style="display:none;">{ICONS['mail']} Confirm by Email / 邮件确认</a>
               <a class="btn btn-primary btn-sm" id="confirm-wa" href="#" target="_blank" rel="noopener" style="display:none;">{ICONS['chat']} Confirm on WhatsApp / WhatsApp 确认</a>
             </div>
           </div>
+          <div class="form-status" id="pay-status"><span id="pay-status-text"></span></div>
         </form>
       </div>
 
