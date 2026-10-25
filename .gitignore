@@ -13,3 +13,5 @@ Thumbs.db
 .dev.vars
 wrangler.local.jsonc
 wrangler-dev.log
+.wrangler/
+local-server*.log

@@ -1,2 +1,0 @@
-FarFlight local preview (static + Alipay API): http://127.0.0.1:8787
-Env vars loaded from .dev.vars: ALIPAY_PRIVATE_KEY, ALIPAY_PUBLIC_KEY
