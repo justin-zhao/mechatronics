@@ -730,6 +730,7 @@ def page_payment():
           </div>
           <div class="form-actions">
             <button type="button" class="btn btn-primary" id="gen-order">{ICONS['check']} Generate Order Number / 生成订单编号</button>
+            <a class="btn btn-accent" id="pay-alipay" href="#" style="opacity:0.55;cursor:not-allowed;" title="Generate your order number first / 请先生成订单编号">{ICONS['cart']} Pay Online with Alipay / 支付宝在线支付</a>
           </div>
 
           <div class="order-summary" id="order-summary">
@@ -751,7 +752,6 @@ def page_payment():
               </table>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
-              <a class="btn btn-accent btn-sm" id="pay-alipay" href="#" style="display:none;">{ICONS['cart']} Pay Online with Alipay / 支付宝在线支付</a>
               <a class="btn btn-primary btn-sm" id="confirm-mail" href="#" style="display:none;">{ICONS['mail']} Confirm by Email / 邮件确认</a>
               <a class="btn btn-primary btn-sm" id="confirm-wa" href="#" target="_blank" rel="noopener" style="display:none;">{ICONS['chat']} Confirm on WhatsApp / WhatsApp 确认</a>
             </div>

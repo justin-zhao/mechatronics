@@ -222,7 +222,11 @@
         mailto.style.display = "";
         wame.style.display = "";
         var pbtn = $("#pay-alipay");
-        if (pbtn) pbtn.style.display = "";
+        if (pbtn) {
+          pbtn.style.opacity = "";
+          pbtn.style.cursor = "";
+          pbtn.removeAttribute("title");
+        }
       });
     }
 

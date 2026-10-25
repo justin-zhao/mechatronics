@@ -8,3 +8,8 @@ __pycache__/
 # OS / editor
 Thumbs.db
 .DS_Store
+
+# Local dev secrets & local-only wrangler config (never commit)
+.dev.vars
+wrangler.local.jsonc
+wrangler-dev.log
