@@ -674,8 +674,8 @@ def page_payment():
       <div class="pay-step">
         <div class="step-num">2</div>
         <h3>Pay via Alipay / 支付宝付款</h3>
-        <p>Scan the Alipay QR code on the right to pay. <strong>Include your order number, product model, quantity and contact in the payment note.</strong></p>
-        <p class="zh">扫描右侧支付宝二维码付款。<strong>付款时请务必备注订单编号、商品型号、数量及联系方式。</strong></p>
+        <p>Scan the Alipay QR code, or tap the <strong>Pay Online with Alipay</strong> button on the right to pay directly in your browser or Alipay app. <strong>Include your order number, product model, quantity and contact in the payment note.</strong></p>
+        <p class="zh">扫描右侧支付宝二维码，或点击<strong>「支付宝网页支付」</strong>按钮在线付款。<strong>付款时请务必备注订单编号、商品型号、数量及联系方式。</strong></p>
       </div>
       <div class="pay-step">
         <div class="step-num">3</div>
@@ -758,6 +758,9 @@ def page_payment():
         </div>
         <p class="en">Scan to pay with the Alipay app</p>
         <p class="zh">请使用支付宝 App 扫码付款</p>
+        <a class="btn btn-accent" style="width:100%;margin-top:16px;" href="{SITE['alipay_url']}" target="_blank" rel="noopener">{ICONS['cart']} Pay Online with Alipay / 支付宝网页支付</a>
+        <p class="en" style="margin-top:10px;">Opens the Alipay secure payment page — pay directly in your browser (mobile opens the Alipay app automatically).</p>
+        <p class="zh">点击打开支付宝网页收银台，可在浏览器中直接完成付款（手机端将自动唤起支付宝 App）。</p>
         <div class="pay-alert">
           <strong>Payment Reminder / 付款提示</strong><br>
           When paying, please add a note with your <strong>Order Number, Product Model, Quantity and Contact Information</strong> so we can match your payment quickly.<br>
