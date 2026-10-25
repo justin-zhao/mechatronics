@@ -75,7 +75,7 @@ PRODUCTS = {
 EXTRA = [
     (r"D:\FarFlight\Public\farflight_logo.png", r"D:\FarFlight\mechatronics\assets\images\logo.png"),
     (r"D:\FarFlight\Public\farflight_logo.png", r"D:\FarFlight\mechatronics\assets\images\favicon.png"),
-    (r"D:\FarFlight\Public\PayInfo\Alipay\payee_justin.jpg", r"D:\FarFlight\mechatronics\assets\images\alipay-qr.jpg"),
+    (r"D:\FarFlight\Public\PayInfo\Alipay\payee_candy.png", r"D:\FarFlight\mechatronics\assets\images\alipay-qr.png"),
 ]
 
 
